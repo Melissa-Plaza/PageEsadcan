@@ -1,0 +1,206 @@
+/* === Sección Contáctanos === */
+.contact-section {
+  background-color: #fff7f3;
+}
+
+/* Imagen de contacto */
+.contacto-img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card reutilizable para secciones internas */
+.quienes-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card de información */
+.info-card {
+  background-color: #f9f9f9;   /* fondo sutil */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.info-card i {
+  min-width: 25px;
+  text-align: center;
+}
+
+/* Card base (cuando no es info) */
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.card h4, .card h3 {
+  color: #222;
+}
+
+.card i {
+  min-width: 25px;
+  text-align: center;
+}
+
+
+/* Título decorado con subrayado */
+.section-title-decorated {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #222;
+}
+
+.section-title-decorated::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background-color: #F6995C;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+/* Inputs, selects y textareas */
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control,
+.form-select {
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  transition: all 0.2s ease;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #F6995C;
+  box-shadow: 0 0 0 0.2rem rgba(246, 153, 92, 0.25);
+}
+
+/* Texto con huellita en subtítulos */
+#contacto h5 span {
+  font-size: 1.2rem;
+  color: #F6995C;
+}
+
+/* Variables de color */
+:root {
+  --esadcan-orange: #f47c46;
+  --esadcan-orange-dark: #e96b2c;
+  --esadcan-accent: #F6995C; /* si lo usas en otros elementos */
+}
+
+/* ==========================
+   Botón naranja coherente
+   ========================== */
+
+/* Definición única y clara para btn-orange */
+.btn-orange {
+  background-color: var(--esadcan-orange);
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px; /* rounded-pill por defecto */
+  font-weight: 700;
+  padding: .5rem 1.25rem;
+  transition: background-color .18s ease, box-shadow .18s ease, transform .08s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+/* Estado hover / active / focus */
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color: var(--esadcan-orange-dark);
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 6px 14px rgba(244,124,70,0.18);
+}
+
+.btn-orange:active {
+  transform: translateY(1px);
+}
+
+/* Reglas más específicas solo si el botón está dentro de la sección contacto
+   (evita !important; úsalas solo si son necesarias) */
+.contact-section .btn-orange,
+#contacto .btn-orange {
+  /* Si necesitas un borde sutil en tarjetas claras */
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* Fallback inline debug rule (elimina cuando todo funcione) */
+/* #btn-enviar-contacto { background-color: var(--esadcan-orange) !important; } */
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .quienes-card {
+    padding: 2rem 1rem;
+  }
+
+  .contacto-img {
+    max-height: 500px;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-banner {
+    height: 40vh;
+    text-align: center;
+  }
+}
+/* Cards de la sección contacto */
+.contact-section .card {
+  background-color: #fdfaf6; /* color hueso/beige */
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Hover / foco */
+button.btn.btn-orange:hover,
+.btn.btn-orange:hover {
+  background-color: #e96b2c !important;
+  color: #ffffff !important;
+}
+
+#contacto button.btn.btn-orange:hover,
+.contact-section button.btn.btn-orange:hover {
+  background-color: #e96b2c !important;
+  color: #ffffff !important;
+}
+
+/* Si quieres forma pill */
+.btn.btn-orange.rounded-pill {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  font-weight: 700;
+}
+

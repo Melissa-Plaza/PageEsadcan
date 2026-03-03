@@ -1,0 +1,81 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top bg-transparent">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" routerLink="/">
+      <img src="/images/logesadcan.png" width="70" height="70" class="d-inline-block align-top" alt="Logo">
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- Inicio -->
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/">
+            <i class="fas fa-home"></i> Inicio
+          </a>
+        </li>
+
+        <!-- Dropdown Programas -->
+        <li
+          class="nav-item dropdown custom-dropdown"
+          [class.show]="isDropdownOpen"
+          (mouseenter)="handleMouseEnter()"
+          (mouseleave)="handleMouseLeave()"
+        >
+          <a
+            class="nav-link text-light dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            (click)="toggleDropdown($event)"
+          >
+            <i class="fa-solid fa-paw"></i> Programas
+          </a>
+          <ul class="dropdown-menu glassy" [class.show]="isDropdownOpen">
+            <li>
+              <a class="dropdown-item fw-bold" routerLink="/servicios" (click)="closeDropdown()">Servicios</a>
+            </li>
+            <li>
+              <a class="dropdown-item fw-bold" routerLink="/capacitacion" (click)="closeDropdown()">Capacitación</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Acerca -->
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/acerca-de-nosotros" fragment="acerca">
+            <i class="fas fa-users"></i> Acerca de nosotros
+          </a>
+        </li>
+         <!-- Galeria -->
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/galeria" fragment="acerca">
+            <i class="fas solid fa-camera"></i> Galeria
+          </a>
+        </li>
+
+        <!-- Contacto -->
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/contactanos" fragment="contacto">
+            <i class="fas fa-envelope"></i> Contáctanos
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

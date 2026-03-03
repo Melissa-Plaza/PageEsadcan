@@ -1,0 +1,22 @@
+<div class="modal-wrapper">
+  <div class="formulario-container">
+    <h2>Formulario de Inscripción</h2>
+
+    <form (ngSubmit)="enviarFormulario()">
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" [(ngModel)]="nombre" required />
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email" [(ngModel)]="correo" required />
+      </div>
+
+      <div class="botones">
+        <button type="button" class="cancelar" (click)="cerrar()">Cancelar</button>
+        <button type="submit" class="enviar">Inscribirme</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,116 @@
+<section class="position-relative text-white text-center d-flex align-items-center justify-content-center" style="height: 60vh; overflow: hidden;">
+  <!-- Imagen de fondo -->
+  <img src="images/contactanos.jpg"
+       class="position-absolute w-100 h-100 object-fit-cover"
+       alt="Fondo Contactanos">
+
+  <!-- Overlay oscuro -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
+
+  <!-- Texto encima -->
+  <div class="position-relative">
+    <h1 class="display-4 fw-bold">Contáctanos</h1>
+    <p class="lead">Estamos aquí para ayudarte a crear un lazo inquebrantable con tu mejor amigo</p>
+  </div>
+</section>
+
+
+<!-- Sección de contacto -->
+<section id="contacto" class="contact-section py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Columna izquierda: información en su card -->
+      <div class="col-md-5">
+        <div class="card shadow-sm border-0 rounded-4 p-4 h-100">
+          <h4 class="fw-bold mb-3 text-dark">ESADCAN - Escuela de Adiestramiento Canino</h4>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-location-dot me-2 text-orange"></i>
+            Km 24 vía a la costa - Chongón
+          </p>
+
+          <hr>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-phone me-2 text-orange"></i>
+            (+593) 96 369 9186
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-brands fa-whatsapp me-2 text-success"></i>
+            096 369 9186
+          </p>
+
+          <hr>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-envelope me-2 text-orange"></i>
+            esadcan_ec&#64;outlook.es
+          </p>
+
+          <p class="mb-0">
+            <i class="fa-solid fa-globe me-2 text-orange"></i>
+            www.esadcan.com
+          </p>
+        </div>
+      </div>
+
+      <!-- Columna derecha: formulario en su card -->
+      <div class="col-md-7">
+        <div class="card shadow-sm border-0 rounded-4 p-4 h-100">
+          <h3 class="fw-bold mb-4 text-center">
+            <i class="fa-solid fa-envelope me-2 text-orange"></i> Contáctanos
+          </h3>
+
+          <form (submit)="enviarFormulario($event)">
+            <div class="mb-3">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" #nombreRef>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" #correoRef>
+            </div>
+
+            <div class="mb-3">
+              <label for="servicio">Servicio</label>
+              <select class="form-select" id="servicio" #servicioRef>
+                <option selected disabled>Selecciona un servicio</option>
+                <option value="obedienciabasica">Obediencia básica</option>
+                <option value="adiestramientoa">Adiestramiento avanzado</option>
+                <option value="socializacion">Socialización</option>
+                <option value="evaluacion">Evaluación de Comportamiento</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="form-control" id="mensaje" #mensajeRef></textarea>
+            </div>
+
+            <h5 class="fw-bold mb-3">Información de tu mascota</h5>
+
+            <div class="mb-3">
+              <label for="nombreMascota">Nombre de la mascota</label>
+              <input type="text" class="form-control" id="nombreMascota" #nombreMascotaRef>
+            </div>
+
+            <div class="mb-3">
+              <label for="edadMascota">Edad de la mascota</label>
+              <input type="text" class="form-control" id="edadMascota" #edadMascotaRef>
+            </div>
+
+            <div class="text-center mt-4">
+              <!-- Botón Enviar al final del formulario -->
+              <button style="background:#f47c46;color:#fff;border:none !important;" class="btn rounded-pill" type="submit">
+                <i class="fa-solid fa-paper-plane me-2"></i> Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

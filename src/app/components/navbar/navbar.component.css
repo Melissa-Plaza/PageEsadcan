@@ -1,0 +1,118 @@
+/* ========== NAV BAR ========== */
+
+/* Estilo principal del navbar */
+.navbar {
+  z-index: 3;
+  transition: background-color 0.3s ease;
+}
+
+/* Logo */
+.navbar-brand img {
+  max-height: none !important;
+}
+
+/* Fondo cuando se hace scroll */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+/* Estilo general de links */
+.nav-link {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Subrayado animado */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F6995C;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #F6995C;
+  transform: scale(1.05);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* No subrayado en dropdown */
+.nav-item.dropdown .nav-link::after {
+  display: none;
+}
+
+/* Mostrar dropdown al pasar el mouse */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 1px;
+}
+
+/* Desactivar clic mientras no hay hover */
+.nav-item.dropdown > .nav-link {
+  pointer-events: none;
+}
+.nav-item.dropdown:hover > .nav-link {
+  pointer-events: auto;
+}
+
+/* ========== DROPDOWN CUSTOM ========== */
+
+/* Botón estilo pill */
+.dropdown-toggle-pill {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.dropdown-toggle-pill:hover {
+  color: #F6995C;
+  transform: scale(1.05);
+}
+
+/* Flechita giratoria */
+.arrow-icon {
+  transition: transform 0.3s ease;
+  margin-left: 5px;
+}
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* Fondo glassy del menú */
+.glassy {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Estilo de cada ítem */
+.dropdown-item {
+  padding: 12px 20px;
+  font-weight: 600;
+  color: #212529;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+.dropdown-item:hover {
+  background-color: rgba(246, 153, 92, 0.2);
+  color: #F6995C;
+}

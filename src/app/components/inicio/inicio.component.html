@@ -1,0 +1,161 @@
+<header class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-text text-start">
+    <h1 class="display-4 fw-bold">Bienvenidos a ESADCAN <i class="fas fa-paw"></i></h1>
+    <p class="lead">Educando con amor y respeto, más de 21 años formando vínculos
+      inquebrantables entre humanos y sus mejores amigos.</p>
+  </div>
+</header>
+
+  <!-- Sección de Nuestros Servicios-->
+<section class="servicios-section py-5 ">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-2 fs-1"><i class="fa-solid fa-paw"></i> Nuestros Servicios <i class="fa-solid fa-paw"></i></h2>
+    <p class="mb-5">Conoce lo que ofrecemos para ti y tu mejor amigo.</p>
+
+    <div class="row justify-content-center g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card card-elevated h-100 d-flex flex-column justify-content-between text-center p-4">
+          <i class="fa-solid fa-paw fa-5x mb-3 text-dark"></i>
+          <h5 class="fw-bold">Obediencia básica</h5>
+          <p class="mb-3">Entrenamiento esencial para la convivencia y disciplina del día a día.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card card-elevated h-100 d-flex flex-column justify-content-between text-center p-4">
+          <i class="fa-solid fa-dog fa-5x mb-3 text-dark"></i>
+          <h5 class="fw-bold">Adiestramiento avanzado</h5>
+          <p class="mb-3">Potencia habilidades específicas para perros con bases previas.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card card-elevated h-100 d-flex flex-column justify-content-between text-center p-4">
+          <i class="fa-solid fa-bone fa-7x mb-3 text-dark"></i>
+          <h5 class="fw-bold">Socialización canina</h5>
+          <p class="mb-3">Ayuda a tu perro a relacionarse con otros de manera saludable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Ola decorativa -->
+  <div class="wave-bottom">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path d="M0,0 C80,40 160,80 240,60 C320,40 400,0 480,20 C560,40 640,80 720,60 C800,40 880,0 960,20 C1040,40 1120,80 1200,60 C1280,40 1360,0 1440,20 L1440,120 L0,120 Z" fill="#fff"></path>
+  </svg>
+</div>
+  <!-- Sabías que -->
+<section class="container my-5 ">
+  <div class="row justify-content-center align-items-center text-center">
+    <div class="col-md-6">
+      <div class="ps-3 border-start border-4 border-warning text-start">
+        <h5 class="fw-bold mb-2">
+          <i class="fa-solid fa-lightbulb text-warning me-2"></i> ¿Sabías que?
+        </h5>
+        <p class="mb-0">
+          Llevar a tu perro a una escuela de adiestramiento desde temprano permite que aprenda a socializar correctamente, obedecer comandos básicos y adaptarse mejor a su entorno.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa-solid fa-comment-dots fa-7x text-warning  animated-icon"></i>
+    </div>
+  </div>
+</section>
+  <!-- Capacitate con nosotros -->
+<section id="capacitate" class="py-5 bg-white bg-paws">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-3">
+      <i class="fa-solid fa-graduation-cap"></i> Capacítate con nosotros
+    </h2>
+    <p class="lead text-center mb-5">
+      ¿Quieres convertirte en adiestrador o paseador canino?<br>
+      ¡Esta es tu oportunidad!
+    </p>
+
+    <div class="row justify-content-center align-items-center">
+      <!-- Slider de imágenes -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <div class="image-slider rounded shadow">
+          <img [src]="imagenes[imagenActual]" alt="Capacitación"
+               class="img-fluid slider-img rounded">
+        </div>
+      </div>
+
+      <!-- Lista y botón -->
+      <div class="col-md-6">
+        <ul class="list-unstyled mb-4 fs-5">
+          <li><i class="fa-solid fa-check text-success me-2"></i> Formación teórica y práctica</li>
+          <li><i class="fa-solid fa-check text-success me-2"></i> Certificación avalada</li>
+          <li><i class="fa-solid fa-check text-success me-2"></i> Acceso a prácticas reales</li>
+          <li><i class="fa-solid fa-check text-success me-2"></i> Posibilidades laborales</li>
+        </ul>
+        <button (click)="irCapacitacion()" class="click btn btn-salmon btn-lg rounded-pill fw-bold"> Conoce más
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- testimonios -->
+<section class="container  my-5">
+  <h2 class="text-center fw-bold mb-4 fs-1">🐾 Testimonios</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <blockquote class="blockquote p-3 border rounded bg-light h-100 text-center">
+  <i class="fa-solid fa-quote-left text-warning fa-2x mb-2"></i>
+
+  <p class="mb-3">"Mi perro ahora obedece al 100%. ¡Gracias ESADCAN!"</p>
+
+  <div class="mb-4">
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+  </div>
+  <footer class="blockquote-footer">Carlos, dueño de Rocky</footer>
+</blockquote>
+    </div>
+    <div class="col-md-4">
+      <blockquote class="blockquote p-3 border rounded bg-light h-100 text-center">
+  <i class="fa-solid fa-quote-left text-warning fa-2x mb-2"></i>
+
+  <p class="mb-3">"Excelente servicio y trato amoroso. Muy recomendados."</p>
+
+  <div class="mb-4">
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+  </div>
+  <footer class="blockquote-footer">Beatriz, dueña de Bruno</footer>
+</blockquote>
+    </div>
+    <div class="col-md-4">
+     <blockquote class="blockquote p-3 border rounded bg-light h-100 text-center">
+  <i class="fa-solid fa-quote-left text-warning fa-2x mb-2"></i>
+
+  <p class="mb-3">"¡Ahora mi perrito es mucho más sociable y obediente!"</p>
+
+  <div class="mb-4">
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+    <i class="fa-solid fa-star text-warning"></i>
+  </div>
+  <footer class="blockquote-footer">María José, dueña de Alfonso y Dante</footer>
+</blockquote>
+    </div>
+  </div>
+</section>
+
+
+

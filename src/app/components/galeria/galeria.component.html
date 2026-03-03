@@ -1,0 +1,32 @@
+
+<section class="position-relative text-white text-center d-flex align-items-center justify-content-center" style="height: 60vh; overflow: hidden;">
+  <!-- Imagen de fondo -->
+  <img src="images/banner.jpg"
+       class="position-absolute w-100 h-100 object-fit-cover"
+       alt="Fondo Contactanos">
+
+  <!-- Overlay oscuro -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
+
+  <!-- Texto encima -->
+  <div class="position-relative">
+    <h1 class="display-4 fw-bold">Nuestra Galería</h1>
+    <p class="lead">Descubre momentos especiales de nuestros alumnos caninos y sus dueños</p>
+  </div>
+
+</section>
+
+<section class="gallery-section py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">
+      <i class="fa-solid fa-paw me-2 text-orange"></i> Galería Esadcan
+    </h2>
+    <div class="row g-4">
+      <div class="col-6 col-md-4 col-lg-3" *ngFor="let img of imagenes">
+        <div class="gallery-card">
+          <img [src]="img" alt="Galería" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

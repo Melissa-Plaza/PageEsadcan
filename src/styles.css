@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+/* Tipografía general */
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* Frase destacada en la cabecera */
+.header-phrase {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Sección de servicios */
+.service-card {
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  transform: scale(1.05);
+  background-color: #f5c673;
+}
+
+/* Sabías que */
+.sabias-que {
+  background-color: #f7f7f7;
+  border-left: 5px solid #f5c673;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+/* Íconos de redes */
+footer a:hover {
+  color: #f5c673;
+}
+
+/* Imagen de fondo (cabecera) */
+.header-bg {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+/* Logo */
+.navbar-brand img {
+  max-height: 40px;
+}
+.titulo-esadcan {
+  font-weight: 700;
+  color: #F6995C;
+}
+
+.subtitulo-esadcan {
+  font-weight: 500;
+}
+
+.texto-normal {
+  font-weight: 400;
+}
+
+.btn-outline-light.btn-floating:hover {
+  background-color: #F6995C !important;
+  border-color: #F6995C !important;
+  color: white !important;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
